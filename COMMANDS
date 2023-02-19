@@ -1,0 +1,34 @@
+Commmands :
+!reto : Random game for 3+ people.
+!ruleta : Choose a random user from voice channel.
+!play <URL> or name: Play the song you want.
+!skip : Skip to next song.
+!lista : Show the playlist.
+
+Random commands you can change : 
+
+!order : Order 66 from Canciller Palpatine.
+!moan : U know what i mean.
+!ht : Hello There!
+!marti : A funny sound in Spanish. 
+!cmamo : Franco Escamilla joke.
+!puni : Random audio from my friend.
+!move : Move bitch get out the way!
+!trece : A Spanish joke with 13th number.
+!panpan : Directed by .... no more no less.
+!sad : Sad music like this code.
+!sus : SUUUUUUUUUUUUUUUUUUUUUS
+!oof : Roblox Hit
+!bad : Nope.
+!turip : Turip ip ip ip. (¿Really you need a description for this?)
+!bye : Disconnect from Discord, low quality.
+!qb : AAAAAAAAAAAAAAH QUE BENDICIÓN.
+!dou : Homer ...Simpson .... DOU
+!dece : Bot Squarepants.
+!platanos : Welcome to LATAM.
+!bb : IT'S BRITNEY BITCH .-
+!vivo : ¿?
+
+
+This bot use youtube_dl to download the music and discord.py 
+for interact with Discord API.
