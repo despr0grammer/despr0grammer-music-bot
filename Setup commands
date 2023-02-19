@@ -1,0 +1,39 @@
+To setup your unique commands follow this guide : 
+
+1 - See the command you want like this : 
+
+@bot.command(help='Execute order 66 - Emperor Palpatine.')
+async def order(ctx):
+    if ctx.author.voice is None:
+        await ctx.send("Tienes que estar conectado a un canal de voz para usar este comando.")
+        return
+
+
+    voice = ctx.guild.voice_client
+    if voice is not None and voice.channel == ctx.author.voice.channel:
+        pass
+    else:
+        voice = await ctx.author.voice.channel.connect()
+
+    url = "https://www.youtube.com/watch?v=sfNZThKEU1Q"
+    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+        audio_url = info['url']
+
+    source = discord.FFmpegPCMAudio(audio_url)
+    voice.play(source, after=lambda e: print("Execute order 66"))
+    voice.source = discord.PCMVolumeTransformer(voice.source)
+    voice.source.volume = 1  
+    
+    --------------------------------------------------------------------------------------------------
+     
+In line 18 : 
+url = "https://www.youtube.com/watch?v=sfNZThKEU1Q"
+    
+You can change the URL vídeo for other like this : https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    
+In the line 6 after async def "YOUR COMMAND HERE"
+
+async def "your command here"(ctx):
+
+And that's all, enjoy my bad guide :D
